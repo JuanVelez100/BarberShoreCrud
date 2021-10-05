@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Persona Eliminada";
+}
+
+@{
+    if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="alert alert-@ViewBag.Type">
+            <strong>@ViewBag.Message</strong>
+        </div>
+    }
+}
+
+<div>
+    <a asp-action="Index">Regresar a Lista de Personas</a>
+</div>
+
